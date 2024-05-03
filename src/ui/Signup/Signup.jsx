@@ -98,7 +98,7 @@ export async function action({ request }) {
 
   try {
     const { data: res } = await axios.post(
-      "http://localhost:3001/register",
+      "https://zenbittestapi-production.up.railway.app/register",
       newData
     );
 

@@ -4,7 +4,9 @@ import axios from "axios";
 export const fetchAllDeals = createAsyncThunk(
   "deals/fetchAlleals",
   async () => {
-    const { data } = await axios.get("http://localhost:3001/deals");
+    const { data } = await axios.get(
+      "https://zenbittestapi-production.up.railway.app/deals"
+    );
     return data;
   }
 );

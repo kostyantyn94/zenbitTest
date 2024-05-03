@@ -19,6 +19,7 @@ function Login() {
   const isLoggedIn = useSelector((store) => store.user.isLoggedIn);
 
   useEffect(() => {
+    console.log(navigation.state);
     setTimeout(() => {
       if (
         navigation.state === "submitting" &&
@@ -27,7 +28,7 @@ function Login() {
         console.log(localStorage.getItem("loggedUser"));
         dispatch(login(localStorage.getItem("loggedUser")));
       }
-    }, 100);
+    }, 1000);
   }, [navigation.state, dispatch]);
 
   return (
@@ -105,7 +106,10 @@ export async function action({ request }) {
   if (Object.keys(errors).length > 0) return errors;
 
   try {
-    const { data: res } = await axios.post("http://localhost:3001/login", data);
+    const { data: res } = await axios.post(
+      "https://zenbittestapi-production.up.railway.app/login",
+      data
+    );
 
     if (res.message) {
       console.error(res.message);
