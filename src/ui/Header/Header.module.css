@@ -1,0 +1,15 @@
+.header {
+  min-height: 80px;
+  background-color: #172234;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 10px;
+  padding: 0 80px;
+}
+
+@media (max-width: 940px) {
+  .header {
+    justify-content: center;
+  }
+}

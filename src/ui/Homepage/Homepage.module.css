@@ -1,0 +1,201 @@
+.homepage {
+  height: calc(100vh - 80px);
+  background: url(./city.png) center top/cover no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 1;
+}
+
+.overlay {
+  background-color: #172234;
+  height: 100%;
+  width: 100%;
+  opacity: .4;
+  position: absolute;
+  z-index: -5;
+}
+
+.text {
+  color: #ffffff;
+  width: 1050px;
+}
+
+.text .header {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 80px;
+  text-align: center;
+}
+
+.text .info {
+  font-family: "Lato", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.btn {
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px solid #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: center;
+  width: 160px;
+  padding: 10px 0;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+}
+
+.deals {
+  margin-top: 50px;
+  padding: 0 60px;
+}
+
+.deals .header {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #B29F7E;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  grid-template-rows: repeat(auto-fill, 400px);
+  grid-auto-rows: 400px;
+  margin-top: 20px;
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 1250px) {
+  .text .header {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .text .info {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .btn {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .container {
+    grid-template-columns: repeat(2, 450px);
+    grid-template-rows: repeat(auto-fill, 300px);
+    grid-auto-rows: 300px;
+  }
+
+}
+
+@media (max-width: 940px) {
+  .text .header {
+    font-size: 38px;
+    line-height: 50px;
+  }
+
+  .text .info {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .btn {
+    margin-top: 100px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .deals .header {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .container {
+    grid-template-columns: repeat(1, 600px);
+    grid-template-rows: repeat(auto-fill, 300px);
+    grid-auto-rows: 300px;
+  }
+
+}
+
+@media (max-width: 640px) {
+  .text .header {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .text .info {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .btn {
+    margin-top: 100px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .container {
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(auto-fill, 300px);
+    grid-auto-rows: 300px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .text .header {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .text .header {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .text .info {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .btn {
+    margin-top: 100px;
+    font-size: 14px;
+    line-height: 20px;
+    width: 90%;
+  }
+
+
+}

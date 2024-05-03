@@ -1,0 +1,27 @@
+.btn {
+  width: 160px;
+  padding: 11px 0px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #B29F7E;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #B29F7E;
+}
+
+.btn:hover {
+  background-color: #B29F7E;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 350px) {
+  .btn {
+    width: 120px;
+  }
+}
