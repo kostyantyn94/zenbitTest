@@ -5,7 +5,7 @@
 
 .img {
   width: 60%;
-  background: url(./login.jpg) center center/cover no-repeat;
+  background: url("https://i.ibb.co/Jxr8JsL/login.jpg") center center/cover no-repeat;
 }
 
 .formContainer {

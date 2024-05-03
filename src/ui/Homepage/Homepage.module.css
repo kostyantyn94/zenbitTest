@@ -1,6 +1,6 @@
 .homepage {
   height: calc(100vh - 80px);
-  background: url(./city.png) center top/cover no-repeat;
+  background: url("https://i.ibb.co/Lrk4Dhz/city.png") center top/cover no-repeat;
   position: relative;
   display: flex;
   justify-content: center;
