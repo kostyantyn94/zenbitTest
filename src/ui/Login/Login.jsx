@@ -28,7 +28,7 @@ function Login() {
         console.log(localStorage.getItem("loggedUser"));
         dispatch(login(localStorage.getItem("loggedUser")));
       }
-    }, 1100);
+    }, 1150);
   }, [navigation.state, dispatch]);
 
   return (
