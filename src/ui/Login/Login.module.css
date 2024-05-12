@@ -25,7 +25,7 @@ form {
   line-height: 34px;
 }
 
-.input {
+/* .input {
   margin-top: 20px;
   position: relative;
 }
@@ -54,7 +54,7 @@ input::placeholder {
   font-family: "Lato", serif;
   color: #172234;
   opacity: .5;
-}
+} */
 
 a {
   font-family: "Lato", serif;
