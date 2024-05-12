@@ -7,6 +7,7 @@ import { login } from "../../redux/userSlice";
 import { Formik, Form } from "formik";
 import FormikInput from "../FormikInput/FormikInput";
 import { loginSchema } from "./validationSchema";
+import { fetchAllDeals } from "../../redux/dealsSlice";
 
 function Login() {
   const navigate = useNavigate();
@@ -33,6 +34,7 @@ function Login() {
         localStorage.setItem("loggedUser", res[0].email);
         helpers.resetForm();
         dispatch(login(values.email));
+        dispatch(fetchAllDeals());
         setTimeout(() => {
           navigate("/");
         }, 1500);

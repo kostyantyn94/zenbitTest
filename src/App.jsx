@@ -5,7 +5,6 @@ import Signup from "./ui/Signup/Signup";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { login } from "./redux/userSlice";
-import { fetchAllDeals } from "./redux/dealsSlice";
 
 const router = createBrowserRouter([
   {
@@ -27,8 +26,6 @@ const router = createBrowserRouter([
 
 function App() {
   const dispatch = useDispatch();
-
-  dispatch(fetchAllDeals());
 
   useEffect(() => {
     if (localStorage.getItem("loggedUser")) {
