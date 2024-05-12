@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Homepage from "./ui/Homepage/Homepage";
 import Login from "./ui/Login/Login";
-import Signup, { action as userSignUpAction } from "./ui/Signup/Signup";
+import Signup from "./ui/Signup/Signup";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { login } from "./redux/userSlice";
@@ -22,7 +22,6 @@ const router = createBrowserRouter([
     path: "/signup",
     element: <Signup />,
     errorElement: <div>Error</div>,
-    action: userSignUpAction,
   },
 ]);
 
